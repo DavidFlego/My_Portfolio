@@ -1,0 +1,35 @@
+.background-symbols p {
+    position: absolute;
+    font-size: 13rem;
+    opacity: .02;
+
+    &.objects {
+        top: 0%;
+        right: 10%;
+    }
+
+    &.html {
+        top: 47%;
+        left: 25%;
+    }
+
+    &.functions {
+        top: 119%;
+        left: 60%;
+    }
+
+    &.arrays {
+        top: 159%;
+        left: 45%;
+    }
+
+    &.objects,
+    &.html,
+    &.functions,
+    &.arrays {
+        @include respond(phone) {
+            display: none;
+        }
+    }
+    
+}

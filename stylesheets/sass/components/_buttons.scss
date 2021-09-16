@@ -1,0 +1,78 @@
+
+
+.portfolio .project {
+
+    &__info--btn .button {
+        text-decoration: none;
+        font-size: 1rem;
+        padding: .8rem 1rem;
+        color: $color-primary;
+        border: 1px solid $color-primary;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 0;
+
+        &:hover {
+            color: $color-primary-light;
+        }
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            background: #f9f9f9;
+            // background: linear-gradient(to bottom, #fbfbfb 10%, #f8f8f8 70%);
+            z-index: -1;
+            transition: .2s linear;
+        }
+        
+        &::before {
+            width: 104%;
+            height: 68%;
+        }
+        &:hover::before {
+            height: 0%;
+        }
+
+        &::after {
+            width: 89%;
+            height: 110%;
+        }
+        &:hover::after {
+            width: 0%;
+        }
+    }
+}
+
+.container {
+    .back__on__top {
+        filter: drop-shadow(0 0 2px rgba(0, 0, 0, .6));
+        position: fixed;
+        bottom: 5rem;
+        right: -4rem;
+        transition: all .3s ease-in;
+
+        &.fade-in {
+            bottom: 5rem;
+            right: -.2rem; 
+        }
+        
+        &--btn {
+            font-size: 2rem;
+            padding: 0.1rem .5em;
+            color: #b23250;
+            background-color: #f2f2f2;
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+            border: none;
+            cursor: pointer;
+            transition: all .3s ease;
+
+            &:hover {
+                font-size: 2.2rem;
+            }
+        }
+    }
+}

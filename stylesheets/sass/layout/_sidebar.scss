@@ -1,0 +1,56 @@
+.sidebar--wrap {
+    filter: drop-shadow(0 0px 0.8rem rgba(0, 0, 0, 0.2));
+    position: fixed;
+
+    @include respond(phone) {
+        position: relative;
+    }
+}
+
+.sidebar {
+    // grid-area: sidebar;
+    position: fixed;
+    width: 23vw;
+    max-width: 450px;
+    background-color: #f2f2f2;
+    text-align: center;
+    height: 92vh;
+    min-height: 750px;
+    max-height: 800px;
+    margin: 30px;
+    z-index: 1000;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+
+    & .sidebar__cred {
+        @include respond(phone) {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 60%;
+        }
+    }
+
+    @include respond(phone) {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        max-width: 98%;
+        height: initial;
+        min-height: initial;
+        max-height: initial;
+        margin: 5px;
+    }
+
+    @include respond(large-desktop) {
+        min-height: 850px;
+        max-height: 900px;
+    }
+
+    .name, .title, .email {
+        font-weight: 300;
+    }
+}

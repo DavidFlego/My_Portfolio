@@ -1,0 +1,28 @@
+.skills {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+
+    @include respond(tab-land) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill {
+        position: relative;
+        width: 30%;
+        padding: 1.6rem;
+        text-align: center;
+        border-left: 2px solid $color-primary;
+        box-shadow: $shadow-light-to-right;
+
+        @include respond(tab-land) {
+            width: 80%;
+            margin-bottom: 2em;
+        }
+
+        @include respond(phone) {
+            width: 90%;
+        }
+    }
+}

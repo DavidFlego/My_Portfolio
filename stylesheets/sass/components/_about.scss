@@ -1,0 +1,65 @@
+
+.about {
+    margin: 12%;
+    @include respond(phone) {
+        margin: 2% 4%;
+    }
+
+    &__text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 0;
+        padding: 2em;
+        border: 1px solid $color-grey-dark-1;
+        position: relative;
+        
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            background: #fff;
+            z-index: -1;
+            transition: 1s linear;
+        }
+
+        &::before {
+            width: 105%;
+            height: 85%;
+        }
+        &:hover::before {
+            // height: 0%;
+            animation: changeHeight 1s linear infinite alternate;
+        }
+
+        &::after {
+            width: 96%;
+            height: 110%;
+        }
+        &:hover::after {
+            // width: 0%;
+            animation: changeWidth 1s linear infinite alternate;
+        }
+    }
+    
+}
+
+@keyframes changeHeight {
+  from {
+    height: 85%;
+  }
+
+  to {
+    height: 100%;
+  }
+}
+
+@keyframes changeWidth {
+  from {
+    width: 96%;
+  }
+
+  to {
+    width: 100%;
+  }
+}

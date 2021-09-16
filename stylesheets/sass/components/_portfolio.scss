@@ -1,0 +1,54 @@
+.portfolio {
+    text-align: center;
+    padding: 2rem 4%;
+
+    .project {
+        margin: 0 8% 6rem 8%;
+        border-top: 1px solid $color-primary;
+        // &:first-of-type {
+        //     margin: 0 8%;
+        // }
+
+        @include respond(tab-port) {
+            margin-bottom: 4rem;
+        }
+
+        &__img {
+            max-height: 400px;
+            overflow: scroll;
+            box-shadow: 0 -15px .8rem -.8rem rgba(0, 0, 0, .2);
+        }
+
+        &__info {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(to bottom, #fff 10%, #f7f7f7 70%);
+            box-shadow: 0 15px .8rem -.8rem rgba(0, 0, 0, .2);
+
+            @include respond(tab-port) {
+                flex-direction: column;
+            }
+
+            &--text {
+                width: 60%;
+                padding: 3rem;
+
+                @include respond(tab-port) {
+                    width: 100%;
+                }
+
+                & p:first-child {
+                    margin-bottom: 2rem;
+                }
+            }
+            
+            &--btn {
+                flex-grow: 1;
+
+                @include respond(tab-port) {
+                    margin-bottom: 2em;
+                }
+            }
+        }
+    }
+}
