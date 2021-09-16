@@ -2,6 +2,10 @@
     filter: drop-shadow(0 0px 0.8rem rgba(0, 0, 0, 0.2));
     position: fixed;
 
+    @include respond(tab-land) {
+        position: relative;
+    }
+
     @include respond(phone) {
         position: relative;
     }
@@ -22,12 +26,16 @@
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 
+    @include respond(tab-land) {
+        position: relative;
+    }
+
     & .sidebar__cred {
         @include respond(phone) {
             display: flex;
             align-items: center;
             justify-content: space-evenly;
-            width: 60%;
+            width: 80%;
         }
     }
 
