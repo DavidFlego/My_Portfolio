@@ -437,15 +437,18 @@ body {
   background-color: #f2f2f2;
   text-align: center;
   height: 92vh;
-  min-height: 750px;
-  max-height: 800px;
+  min-height: 800px;
+  max-height: 850px;
   margin: 30px;
   z-index: 1000;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
   @media only screen and (max-width: 75em) {
     .sidebar {
-      position: relative; } }
+      position: relative;
+      height: 50vh;
+      min-height: 580px;
+      max-height: 650px; } }
   @media only screen and (max-width: 37.5em) {
     .sidebar .sidebar__cred {
       display: flex;
@@ -467,7 +470,6 @@ body {
       margin: 5px; } }
   @media only screen and (min-width: 137.5em) {
     .sidebar {
-      min-height: 850px;
-      max-height: 900px; } }
+      height: 950px; } }
   .sidebar .name, .sidebar .title, .sidebar .email {
     font-weight: 300; }
