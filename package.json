@@ -2,7 +2,7 @@
   "name": "portfolio-final",
   "version": "1.0.0",
   "description": "David Flego portfolio",
-  "main": "index.js",
+  "main": "portfolio.html",
   "scripts": {
     "watch:sass": "node-sass stylesheets/sass/main.scss stylesheets/css/styles.css -w",
     "compile:sass": "node-sass stylesheets/sass/main.scss stylesheets/css/style.comp.css",
