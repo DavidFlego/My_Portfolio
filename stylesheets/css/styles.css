@@ -443,18 +443,21 @@ body {
   z-index: 1000;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
-  @media only screen and (max-width: 75em) {
-    .sidebar {
-      position: fixed;
-      height: 50vh;
-      min-height: 580px;
-      max-height: 650px; } }
   @media only screen and (max-width: 37.5em) {
     .sidebar .sidebar__cred {
       display: flex;
       align-items: center;
       justify-content: space-evenly;
       width: 80%; } }
+  @media only screen and (max-width: 75em) {
+    .sidebar {
+      position: fixed;
+      height: 50vh;
+      min-height: 580px;
+      max-height: 650px; } }
+  @media only screen and (max-width: 56.25em) {
+    .sidebar {
+      position: fixed; } }
   @media only screen and (max-width: 37.5em) {
     .sidebar {
       position: relative;

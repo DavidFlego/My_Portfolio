@@ -24,13 +24,6 @@
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 
-    @include respond(tab-land) {
-        position: fixed;
-        height: 50vh;
-        min-height: 580px;
-        max-height: 650px;
-    }
-
     & .sidebar__cred {
         @include respond(phone) {
             display: flex;
@@ -38,6 +31,16 @@
             justify-content: space-evenly;
             width: 80%;
         }
+    }
+
+    @include respond(tab-land) {
+        position: fixed;
+        height: 50vh;
+        min-height: 580px;
+        max-height: 650px;
+    }
+    @include respond(tab-port) {
+        position: fixed;
     }
 
     @include respond(phone) {
