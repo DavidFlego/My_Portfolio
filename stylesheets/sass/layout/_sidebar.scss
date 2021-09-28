@@ -34,13 +34,9 @@
     }
 
     @include respond(tab-land) {
-        position: fixed;
         height: 50vh;
         min-height: 580px;
         max-height: 650px;
-    }
-    @include respond(tab-port) {
-        position: fixed;
     }
 
     @include respond(phone) {
