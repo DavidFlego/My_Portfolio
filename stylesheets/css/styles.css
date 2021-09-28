@@ -423,9 +423,6 @@ body {
 .sidebar--wrap {
   filter: drop-shadow(0 0px 0.8rem rgba(0, 0, 0, 0.2));
   position: fixed; }
-  @media only screen and (max-width: 75em) {
-    .sidebar--wrap {
-      position: relative; } }
   @media only screen and (max-width: 37.5em) {
     .sidebar--wrap {
       position: relative; } }
@@ -445,7 +442,6 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
   @media only screen and (max-width: 75em) {
     .sidebar {
-      position: relative;
       height: 50vh;
       min-height: 580px;
       max-height: 650px; } }
