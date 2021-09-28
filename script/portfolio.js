@@ -1,11 +1,15 @@
 
-window.onload = function(){
+const scrollToTop = () => {
     window.scroll({
         top: 0, 
         left: 0, 
         behavior: 'smooth' 
     });
 }
+
+window.onload = (function(){
+    scrollToTop()
+})
 
 
 const btnOnTop = document.getElementById('onTop');
@@ -20,9 +24,5 @@ window.onscroll = function() {
 };
 
 btnOnTop.addEventListener('click', function(){
-    window.scroll({
-        top: 0, 
-        left: 0, 
-        behavior: 'smooth' 
-    });
+    scrollToTop()
 })
