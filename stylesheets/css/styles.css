@@ -44,8 +44,7 @@ body {
   color: #0f0f0f; }
 
 .sidebar .name {
-  font-size: 4.4em;
-  color: red; }
+  font-size: 4.4em; }
   @media only screen and (max-width: 75em) {
     .sidebar .name {
       font-size: 3.4em; } }
