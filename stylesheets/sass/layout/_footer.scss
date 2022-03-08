@@ -1,0 +1,11 @@
+
+.footer__copyright {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-grey-dark-3;
+    font-size: 1.4em;
+    height: 2.4rem;
+    background-color: $color-grey-dark-1;
+}
